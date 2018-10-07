@@ -4,11 +4,31 @@ body{
 input {
     height: 20em;
     width: 40em;
+    border-radius: 5px;
 }
-button{
+button {
     border-radius: 17px;
     background: none;
     border-color: black;
     padding: 1%;
+}
+.message{
+    border-bottom-color: black solid;
+    border-bottom: solid 0.2px;
+}
+.container{
+    border: solid 0.5px;
+    padding: 5%;
+    width: 40em !important;
+}
+.send{
+    margin-left: 75%;
+}
+.delete{
+    margin-left: 80%;
+    margin-bottom: 2%;
+}
 
+h3{
+    margin-bottom: 3%;
 }
