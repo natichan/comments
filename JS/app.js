@@ -33,12 +33,10 @@ db.collection("posts")
         // console.log(doc.data());
 
         post.innerHTML += `
-        <div>
-            <p>${doc.data().post}
-                <button onclick="deletePost('${doc.id}')">Eliminar</button>
-            </p>
-        </div>
-        <hr>`
+        <div class="message">
+            <p>${doc.data().post}</p>
+            <button class="delete" onclick="deletePost('${doc.id}')">Eliminar</button>
+        </div>`
     });
 });
 
