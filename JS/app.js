@@ -30,9 +30,15 @@ db.collection("posts")
     post.innerHTML = '';
     querySnapshot.forEach((doc) => {
         // console.log(`${doc.id} => ${doc.data().post}`);
-        console.log(doc.data());
+        // console.log(doc.data());
 
-        post.innerHTML += `<div>${doc.data().post}</div><button onclick="deletePost('${doc.id}')">Eliminar</button>`
+        post.innerHTML += `
+        <div>
+            <p>${doc.data().post}
+                <button onclick="deletePost('${doc.id}')">Eliminar</button>
+            </p>
+        </div>
+        <hr>`
     });
 });
 
