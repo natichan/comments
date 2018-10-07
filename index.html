@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/CSS/app.css" rel="stylesheet">
+    <link href="./assets/CSS/grid.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <input type="text" id="comment" placeholder="Ingresa tu comentario" >
-        <button id="button" onclick="saveComment()">Enviar comentario</button>
-        <div id="post"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <input type="text" id="comment" placeholder="Ingresa tu comentario" >
+            </div>
+            <div>
+                <button id="button" onclick="saveComment()">Enviar comentario</button>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Comentarios</h3>
+            <div id="post"></div>
+        </div>
     </div>
 
 

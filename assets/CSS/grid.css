@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box; /* para leer sobre como funciona box sizing https://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+  
+  /* funcionamiento de before y after https://developer.mozilla.org/es/docs/Web/CSS/::before https://developer.mozilla.org/es/docs/Web/CSS/::after */
+  .row:before, .row:after {
+    content: " ";
+    display: table;
+  }
+  
+  .row {  /* como funciona la propiedad clear https://developer.mozilla.org/es/docs/Web/CSS/clear */
+    clear: both;
+  }
+  
+  /* el selector [class*="col-"] hace referencia a qué todas 
+  las clases que comiencen con col- se verán afectas por los estilos */
+  [class*="col-"] { 
+    min-height: 7px;
+    padding: 12px;
+    float: left;
+  }
+  /* (n/12)*100 ----> (1/12)*100 = 8,333333333  
+  (el 12 en la formula corresponde a la cantidad de columnas en las que dividiremos el sitio*/
+  .col-1 {
+    width: 8,333333333%;
+  }
+  
+  .col-2 {
+    width: 16,666666667%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33,333333333%;
+  }
+  
+  .col-5 {
+    width: 41,666666667%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58,333333333%;
+  }
+  
+  .col-8 {
+    width: 66,666666667%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83,333333333%;
+  }
+  
+  .col-11 {
+    width: 91,666666667%;
+  }
+  
+  .col-12{
+    width: 100%;
+  }
+  
+  
+  /* links interesantes sobre media queries https://learn-the-web.algonquindesign.ca/topics/media-queries/ 
+    https://kapeli.com/cheat_sheets/CSS_Device_Media_Queries.docset/Contents/Resources/Documents/index */
+    @media all and (max-width: 700px){ 
+      [class*="col-"] {
+        width: 100%
+      }
+  }
