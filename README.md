@@ -13,4 +13,4 @@ Interfaz web donde puedes:
 
 ### Proyecto
 
-[Deja tus comentarios]()
+[Deja tus comentarios](https://natichan.github.io/comments/)
