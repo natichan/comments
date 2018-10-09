@@ -1,25 +1,32 @@
 body{
     align-content: center;
+    background-color: black;
 }
 input {
-    height: 20em;
+    height: 10em;
     width: 40em;
     border-radius: 5px;
 }
+input:placeholder-shown{
+    padding-bottom: 70px !important;
+}
 button {
     border-radius: 17px;
-    background: none;
-    border-color: black;
+    background: rgba(0, 0, 255, 0.699);
+    border-color: rgba(0, 0, 0, 0.233);
     padding: 1%;
 }
 .message{
-    border-bottom-color: black solid;
-    border-bottom: solid 0.2px;
+    border: solid 1px;
+    border-radius: 5px;
+    margin: 2%;
 }
 .container{
     border: solid 0.5px;
-    padding: 5%;
+    padding: 3%;
     width: 40em !important;
+    border-radius: 5px;
+    background-color: beige
 }
 .send{
     margin-left: 75%;
@@ -30,5 +37,27 @@ button {
 }
 
 h3{
-    margin-bottom: 3%;
+    margin: 3%;
+}
+p{
+    margin: 2%;
+}
+@media (max-width: 700px) {
+    .container{
+        border: solid 0.5px;
+        padding: 3%;
+        width: 20em !important;
+        border-radius: 5px;
+        margin: 0%;
+    }
+    input {
+        height: 10em;
+        width: 20em;
+        border-radius: 5px;
+    }
+    .delete{
+        margin-left: 76%;
+        margin-bottom: 2%;
+    }
+    
 }
