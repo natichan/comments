@@ -1,0 +1,25 @@
+{
+  "name": "comentarios",
+  "version": "1.0.0",
+  "description": "Interfaz web donde puedes: - Agregar comentarios y expresar las cosas que piensas - Ver una lista de comentarios anteriores - Eliminar el comentario para tener control sobre lo que escribes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natichan/comments.git"
+  },
+  "author": "Natalia MH <nataliamh.88qgmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natichan/comments/issues"
+  },
+  "homepage": "https://github.com/natichan/comments#readme",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
