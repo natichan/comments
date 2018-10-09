@@ -20,6 +20,8 @@ button {
     border: solid 1px;
     border-radius: 5px;
     margin: 2%;
+    background-color: #ffff;
+    border-color: rgba(0, 0, 0, 0.507);
 }
 .container{
     border: solid 0.5px;
